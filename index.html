@@ -15,39 +15,39 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-3 col-md-1 col-xs-1">
+      <div class="col-3">
       </div>
-      <div class="col-6 col-md-9 col-xs-9">
+      <div class="col-6">
         <div class="row">
-          <div class="col-3 col-md-1 col-xs-1">
-          </div>
-          <div class="col-6 col-md-9 col-xs-9">
+          <div class="col">
             <!-- Title -->
             <h2 class="text-center">To-do list</h2>
-          </div>
-          <div class="col-3 col-md-1 col-xs-1">
           </div>
         </div>
         <!-- The div where we will display to do list items -->
         <div class="row">
           <!-- The input element for users to add To Do -->
-          <div class="col-2 col-md-2 col-xs-2">
-          </div>
-          <div class="col-8 col-md-8 col-xs-8">
-            <input class="col-12" placeholder="New To-Do">
+          <div class="col-10">
+            <input class="col-12" placeholder="New To-Do" id="newTask">
           </div>
           <!-- A button for adding ToDos -->
-          <div class="col-2 col-md-2 col-xs-2">
-            <button type="button" class="btn btn-sm btn-primary">Add</button>
-          </div>
-          <div class="col-2 col-md-2 col-xs-2">
+          <div class="col-1">
+            <button onclick="postTask()" type="button" class="btn btn-sm btn-primary">Add</button>
           </div>
         </div>
       </div>
-      <div class="col-3 col-md-1 col-xs-1">
+      <div class="col-3">
       </div>
     </div>
     <hr>
+    <div class="row">
+      <div class="col-3">
+      </div>
+      <div class="col-6" id="to-do-items">
+      </div>
+      <div class="col-3">
+      </div>
+    </div>
   </div>
 </body>
 </html>
